@@ -124,8 +124,8 @@ const Cart = () => {
     const  amount=totalPrice
   //paymnet
   const checkoutHandler=async(amount)=>{
-    const {data:{key}}=await axios.get("http://localhost:8080/api/getkey")
-    const {data:{order}}=await axios.post("http://localhost:8080/api/checkout",{
+    const {data:{key}}=await axios.get("https://e-commercebackend-pzhn.onrender.com/api/getkey")
+    const {data:{order}}=await axios.post("https://e-commercebackend-pzhn.onrender.com/api/checkout",{
         amount
 
     })
@@ -138,7 +138,7 @@ const Cart = () => {
         description: "Test Transaction",
         image: "https://example.com/your_logo",
         order_id:order.id, 
-        callback_url: "http://localhost:8080/api/paymentverification",
+        callback_url: "https://e-commercebackend-pzhn.onrender.com/api/paymentverification",
         prefill: {
             name: "Pradeep Kumar",
             email: "pradeep.kumar@example.com",

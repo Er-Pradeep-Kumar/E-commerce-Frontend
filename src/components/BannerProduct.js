@@ -29,12 +29,10 @@ const BannerProduct = () => {
     ]
 
     const mobileImages = [
-        image1,
-        image2,
-        image3,
-        image4,
-        image5,
-        image6
+        image3Mobile,
+        image3Mobile,
+        image4Mobile
+       
     ]
 
     const nextImage = () =>{
